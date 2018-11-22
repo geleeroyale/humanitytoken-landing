@@ -20,8 +20,8 @@
 
 // Font.
 	$font: (
-		family:				('Source Sans Pro', Helvetica, sans-serif),
-		family-fixed:		('Courier New', monospace),
+		family:				('Roboto Mono', Helvetica, sans-serif),
+		family-fixed:		('Work Sans', monospace),
 		weight:				300,
 		weight-bold:		600,
 		letter-spacing:		0.025em,
@@ -31,13 +31,13 @@
 // Palette.
 	$palette: (
 		bg:					#0085FF,
-		bg-alt:				#2a2f4a,
-		fg:					#fff,
-		fg-bold:			#fff,
+		bg-alt:				#FFFA8C,
+		fg:					#000,
+		fg-bold:			#000,
 		fg-light:			rgba(244,244,255,0.2),
 		border:				rgba(212,212,255,0.2),
 		border-bg:			rgba(212,212,255,0.1),
-		highlight:			#FFFA8C,
+		highlight:			#96CDFF,
 		accent1:			#FFFA8C,
 		accent2:			#8d82c4,
 		accent3:			#ec8d81,
