@@ -1,17 +1,16 @@
-import React from 'react'
+import React from "react";
+import logo from "../assets/images/humanity-token-logo.png";
 
-const BannerLanding = (props) => (
-    <section id="banner" className="style2">
-        <div className="inner">
-            <header className="major">
-                <h1>Landing</h1>
-            </header>
-            <div className="content">
-                <p>Lorem ipsum dolor sit amet nullam consequat<br />
-                sed veroeros. tempus adipiscing nulla.</p>
-            </div>
-        </div>
-    </section>
-)
+const BannerLanding = props => (
+  <section id="banner" className="style1" style={{ minHeight: `100vh` }}>
+    <div className="inner">
+      <header className="major">
+        <img src={logo} style={{ maxWidth: `250px` }} />
+      </header>
+      <h2>Tokenize social impact</h2>
+      <div className="content" />
+    </div>
+  </section>
+);
 
-export default BannerLanding
+export default BannerLanding;

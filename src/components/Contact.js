@@ -1,7 +1,12 @@
-import React from 'react'
+import React from "react";
 
 const Contact = props => (
-  <section id="contact">
+  <section
+    id="contact"
+    style={{
+      backgroundColor: `#0085FF`
+    }}
+  >
     <div className="inner">
       <section>
         <form method="post" action="#">
@@ -32,7 +37,9 @@ const Contact = props => (
           <div className="contact-method">
             <span className="icon alt fa-envelope" />
             <h3>Email</h3>
-            <a href="#">information@untitled.tld</a>
+            <a href="mailto:contact@humanitytoken.net">
+              contact@humanitytoken.net
+            </a>
           </div>
         </section>
         <section>
@@ -58,6 +65,6 @@ const Contact = props => (
       </section>
     </div>
   </section>
-)
+);
 
-export default Contact
+export default Contact;
