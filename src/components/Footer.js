@@ -2,8 +2,12 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Container = styled.div`
+  padding-top: 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  @media (max-width: 800px) {
+    grid-template-columns: 1fr;
+  }
 `
 
 const Content = styled.div`
@@ -20,6 +24,9 @@ const Email = styled.a`
 `
 const Lastline = styled.hr`
   grid-column: span 2;
+  @media (max-width: 800px) {
+    grid-column: span 1;
+  }
 `
 
 const Copyright = styled.p`
@@ -27,6 +34,10 @@ const Copyright = styled.p`
   padding: 3rem;
   color: #fffa8c;
   grid-column: span 2;
+
+  @media (max-width: 800px) {
+    grid-column: span 1;
+  }
 `
 
 const Footer = props => (

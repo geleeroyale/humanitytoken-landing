@@ -9,11 +9,25 @@ const Section = styled.div`
   max-width: 100%;
 `
 
+const Description = styled.p`
+  text-align: center;
+  padding-top: 1rem;
+  margin: 0 auto;
+  align-self: end;
+`
+
 const JointVenture = styled.div`
-  padding-top: 3rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  padding: 1rem;
+  max-width: 800px;
+  grid-template-columns: repeat(3, auto);
   justify-items: center;
+  align-items: center;
+  margin: auto;
+
+  @media (max-width: 800px) {
+    grid-template-columns: 1fr;
+  }
 `
 
 const Link = styled.a`
@@ -21,8 +35,8 @@ const Link = styled.a`
 `
 
 const Logo = styled.img`
-  padding: 3rem;
-  max-width: 250px;
+  padding: 1rem;
+  max-width: 200px;
 `
 
 const Container = styled.div`
@@ -37,7 +51,7 @@ const Content = styled.div`
 `
 
 const Equation = styled.h2`
-  padding-top: 20vh;
+  padding-top: 10vh;
   color: black;
   text-align: center;
   justify-self: center;
@@ -46,6 +60,7 @@ const Equation = styled.h2`
 
 const Flyer = props => (
   <Section style={{ minHeight: `100vh` }}>
+    <Description>A collaboration between</Description>
     <JointVenture>
       <Link href="https://decent.ch">
         <Logo src={logo1} />
