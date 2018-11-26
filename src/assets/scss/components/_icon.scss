@@ -10,6 +10,7 @@
 		@include icon;
 		border-bottom: none;
 		position: relative;
+		
 
 		> .label {
 			display: none;
@@ -19,7 +20,7 @@
 			&:before {
 				background-color: _palette(fg-bold);
 				border-radius: 100%;
-				color: _palette(bg);
+				color: _palette(bg-alt);
 				display: inline-block;
 				height: 2em;
 				line-height: 2em;
@@ -37,6 +38,7 @@
 
 			&:hover {
 				&:before {
+					color: _palette(bg);
 					background-color: _palette(accent1);
 				}
 			}
